@@ -31,7 +31,8 @@ p{margin:0;max-width:62ch}
 a{color:inherit}
 img{max-width:100%;height:auto;display:block}
 .wrap{max-width:1040px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
-.eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.14em;color:var(--red);margin-bottom:12px}
+.eyebrow{display:block;font-family:"Zen Kaku Gothic New","Noto Sans JP",sans-serif;font-size:clamp(24px,3vw,32px);font-weight:900;letter-spacing:.02em;color:var(--ink);margin-bottom:14px;line-height:1.35}
+.eyebrow::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--red);margin-right:12px;vertical-align:middle}
 .sec{position:relative;overflow:hidden;padding:88px 0}
 .sec.alt{background:var(--white)}
 .sec::before{content:"";position:absolute;pointer-events:none;z-index:0}
@@ -40,7 +41,7 @@ img{max-width:100%;height:auto;display:block}
 .sec:nth-of-type(4n+3)::before{top:60px;right:-70px;width:220px;height:220px;border-radius:50%;border:14px solid var(--deco)}
 .sec:nth-of-type(4n+4)::before{top:40px;right:-40px;width:160px;height:26px;border-radius:999px;background:var(--deco);box-shadow:0 52px 0 -4px var(--deco),0 104px 0 8px var(--deco)}
 .sec-t{font-size:clamp(26px,3.4vw,36px);margin-bottom:14px}
-.sec-lead{color:var(--sub);margin-bottom:40px;max-width:60ch}
+.sec-lead{color:var(--ink);font-size:17px;margin-bottom:40px;max-width:60ch}
 .red{color:var(--red)}
 
 /* nav */
@@ -242,8 +243,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 <section id="about" class="sec alt"><div class="wrap reveal">
   <span class="eyebrow">番組とは</span>
-  <h2 class="sec-t">「もったいない」に、愛のある口出しをする番組。</h2>
-  <p class="sec-lead">出演者2人のうち1人が現役の企業マーケ担当。身近な商売の課題を持ち込み、頼まれてもいないのに改善案を言い切ります。目指すのは、聴いた人の商売の「きっかけ」になること。</p>
+    <p class="sec-lead">出演者2人のうち1人が現役の企業マーケ担当。身近な商売の課題を持ち込み、頼まれてもいないのに改善案を言い切ります。目指すのは、聴いた人の商売の「きっかけ」になること。</p>
   <div class="quote"><h3>マーケティングという手段で、企業や業界の背中を押したい。</h3><small>ユウイチ（第1回より）</small></div>
   <div class="rules">
     <div><b><i>一</i>公開情報だけで語る</b><p>報道・IR・実際の売り場や広告など、誰でも見られるものだけを根拠にします。</p></div>
@@ -254,8 +254,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 <section id="cast" class="sec"><div class="wrap reveal">
   <span class="eyebrow">出演</span>
-  <h2 class="sec-t">猫パンチする人と、噛み砕く人。</h2>
-  <p class="sec-lead">難しいマーケの言葉は、生徒役のユウキがその場で聞き直します。専門知識がなくても、ゲストは自分の商売の話をするだけで大丈夫です。</p>
+    <p class="sec-lead">難しいマーケの言葉は、生徒役のユウキがその場で聞き直します。専門知識がなくても、ゲストは自分の商売の話をするだけで大丈夫です。</p>
   <div class="cast">
     <div class="person"><div class="avatar a">柳</div><div><div class="role">猫パンチ担当</div><h3>ユウイチ（柳猫）</h3><p>現役の企業マーケ担当。番組では名前だけを出し、所属は非公開。課題に猫パンチし、「俺ならこうする」と代案を言い切る側。</p></div></div>
     <div class="person"><div class="avatar b">ユ</div><div><div class="role">生徒担当・進行・編集</div><h3>ユウキ</h3><p>聞き手。秋葉原でアニメ聖地ツアーのガイドをしていて、自分も集客に悩む側。難しい言葉をわかりやすく噛み砕いて聞き直す。</p></div></div>
@@ -264,25 +263,16 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 <section id="format" class="sec alt"><div class="wrap reveal">
   <span class="eyebrow">番組の型</span>
-  <h2 class="sec-t">壱・弐・参で、明日やれる一手まで。</h2>
-  <div class="kata">
+    <div class="kata">
     <div><div class="n">壱</div><h3>業界の課題を持ち込む</h3><p>釣り・民泊・歯医者・ツアーガイド。身近な商売の「もったいない」が題材。ゲスト回では、あなたの商売がここに入ります。</p></div>
     <div><div class="n">弐</div><h3>頼まれてもいないのに猫パンチ</h3><p>「俺ならこうする」と、勝手に改善案を出します。番組いちばんの見せ場。</p></div>
     <div><div class="n">参</div><h3>明日やれる一手まで爪を立てる</h3><p>批評で終わらせません。収録の最後に「明日やること」を一緒に決めます。</p></div>
-  </div>
-  <div class="tl">
-    <div><b>3<small>分</small></b><span>今日の題材</span><em>どの商売・どの課題か</em></div>
-    <div><b>10<small>分</small></b><span>猫パンチ</span><em>現場目線でツッコむ</em></div>
-    <div class="hi"><b>10<small>分</small></b><span>俺ならこうする</span><em>代案を言い切る見せ場</em></div>
-    <div><b>5<small>分</small></b><span>噛み砕き</span><em>要点をやさしく整理</em></div>
-    <div><b>2<small>分</small></b><span>締め</span><em>次回予告・お便り募集</em></div>
   </div>
 </div></section>
 
 <section id="flow" class="sec"><div class="wrap reveal">
   <span class="eyebrow">ゲスト回の流れ</span>
-  <h2 class="sec-t">相談を一言送るところから、公開まで。</h2>
-  <p class="sec-lead">準備するものはありません。「今、商売で困っていること」を持ってきてもらえれば、あとは番組側で進めます。</p>
+    <p class="sec-lead">準備するものはありません。「今、商売で困っていること」を持ってきてもらえれば、あとは番組側で進めます。</p>
   <div class="flow">
     <div class="step"><div class="n">STEP 1</div><b>相談を一言送る</b><p>フォームかLINEで「集客がうまくいかない」程度の一言でOK。長文は要りません。</p></div>
     <div class="step"><div class="n">STEP 2</div><b>3人のLINEグループ</b><p>ユウキ・ユウイチ・あなたの連絡用グループを作ります。やりとりはここだけ。</p></div>
@@ -322,8 +312,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 <section id="eps" class="sec"><div class="wrap reveal">
   <span class="eyebrow">エピソード</span>
-  <h2 class="sec-t">これまでの猫パンチ。</h2>
-  <p class="sec-lead">2026年7月始動。隔週から月1のペースで、続々収録中です。</p>
+    <p class="sec-lead">2026年7月始動。隔週から月1のペースで、続々収録中です。</p>
   <ul class="eps">
     <li><span class="no">#1</span><div class="t">マーケ課題は「掛け算」で解ける。業界の背中を押す新感覚番組始動！<small>番組のコンセプトと、ユウイチ流「マーケティング」の定義。釣りと民泊に「俺ならこうする」</small></div><a class="play" href="https://open.spotify.com/episode/0TjGoTPhzlOjAzpPausf1u" target="_blank" rel="noopener">▶ 聴く</a></li>
     <li><span class="no">#2</span><div class="t">【歯医者】嫌われる場所から選ばれる場所へ！患者第一のマーケティング施策とは？<small>「行きたくない歯医者」を「選ばれる歯医者」に変える、予防歯科とAI導入の差別化戦略</small></div><a class="play" href="https://open.spotify.com/episode/3wNQ0tZWk1HG0HiYUfa2yW" target="_blank" rel="noopener">▶ 聴く</a></li>
@@ -333,8 +322,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 <section id="next" class="sec alt"><div class="wrap reveal">
   <span class="eyebrow">これからやりたいこと</span>
-  <h2 class="sec-t">口出しで終わらせない仕掛けを、順に作っています。</h2>
-  <div class="next">
+    <div class="next">
     <div><span class="chip">いま募集中</span><h3>ゲスト回（公開猫パンチ）</h3><p>集客やマーケに困っている人が、自分の商売を持ち込む回。フォームの「提案依頼」から応募。このページはそのためのものです。</p></div>
     <div><span class="chip">続編</span><h3>お返事回</h3><p>猫パンチされた人が、数ヶ月後に「やってみた結果」を話しに来る回。ゆりさんのタイトル変更がその第1号になる予定。</p></div>
     <div><span class="chip gray">構想中</span><h3>勝手に提案書1枚</h3><p>各回の「俺ならこうする」をA4の提案書PDFにして概要欄に置く。決裁者が持ち帰れる形にする。</p></div>
@@ -344,8 +332,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 <section id="links" class="sec"><div class="wrap reveal">
   <span class="eyebrow">リンク</span>
-  <h2 class="sec-t">番組の入り口はここから。</h2>
-  <ul class="linklist">
+    <ul class="linklist">
     <li><div><b>Spotify 番組ページ</b><small>全エピソードはこちら。フォローすると新着が届きます</small></div><a href="https://open.spotify.com/show/033SdHMot0yrMpyGbboAYc" target="_blank" rel="noopener">open.spotify.com</a></li>
     <li><div><b>お便り・提案依頼フォーム</b><small>ゲスト応募、感想、質問はすべてこの1つのフォームから</small></div><a href="https://forms.gle/DHtyPdeBFkCN56rR8" target="_blank" rel="noopener">forms.gle</a></li>
     <li><div><b>このページ</b><small>ゲスト候補の方に渡す用。そのままシェアしてください</small></div><a href="https://yukitchy.github.io/nekopunch-guest/">yukitchy.github.io/nekopunch-guest</a></li>
