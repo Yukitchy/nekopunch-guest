@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>愛の猫パンチ｜ゲストになる前に読むページ</title>
+<meta name="description" content="マーケプロの業界口出し系ポッドキャスト「愛の猫パンチ」。番組の中身・ゲスト回の流れ・これからやりたいことを1ページに。">
+<meta property="og:title" content="愛の猫パンチ｜ゲストになる前に読むページ">
+<meta property="og:description" content="頼まれてもいないのに、あなたの商売に「俺ならこうする」。集客やマーケに困っている人がゲストになる番組です。">
+<meta property="og:image" content="https://yukitchy.github.io/nekopunch-guest/cover.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@700;900&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F6F4EE; --white:#FFFFFF; --ink:#1C1B22; --sub:#5C5A66; --line:#DDDAD2;
+  --red:#D62828; --red-ink:#B01E1E; --deco:rgba(28,27,34,.05);
+  --ease-out:cubic-bezier(.22,1,.36,1); --spring:cubic-bezier(.34,1.56,.64,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Noto Sans JP",-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN",sans-serif;
+  font-size:16px;line-height:1.85;-webkit-font-smoothing:antialiased}
+body,p,li,td,th,div,span,b,small,summary,button,a,h1,h2,h3,h4{word-break:auto-phrase;line-break:strict;overflow-wrap:anywhere}
+h1,h2,h3,h4,.btn,.chip,.eyebrow,.sec-t,.step b,.stat b{text-wrap:balance}
+p,.a{text-wrap:pretty}
+h1,h2,h3,h4{font-family:"Zen Kaku Gothic New","Noto Sans JP",sans-serif;font-weight:900;line-height:1.35;letter-spacing:.01em;margin:0}
+p{margin:0;max-width:62ch}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+.eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.14em;color:var(--red);margin-bottom:12px}
+.sec{position:relative;overflow:hidden;padding:88px 0}
+.sec.alt{background:var(--white)}
+.sec::before{content:"";position:absolute;pointer-events:none;z-index:0}
+.sec:nth-of-type(4n+1)::before{top:-40px;right:-60px;width:260px;height:260px;background:var(--deco);border-radius:0 0 0 100%}
+.sec:nth-of-type(4n+2)::before{bottom:24px;right:-10px;width:200px;height:150px;background-image:radial-gradient(var(--deco) 2px,transparent 2px);background-size:18px 18px}
+.sec:nth-of-type(4n+3)::before{top:60px;right:-70px;width:220px;height:220px;border-radius:50%;border:14px solid var(--deco)}
+.sec:nth-of-type(4n+4)::before{top:40px;right:-40px;width:160px;height:26px;border-radius:999px;background:var(--deco);box-shadow:0 52px 0 -4px var(--deco),0 104px 0 8px var(--deco)}
+.sec-t{font-size:clamp(26px,3.4vw,36px);margin-bottom:14px}
+.sec-lead{color:var(--sub);margin-bottom:40px;max-width:60ch}
+.red{color:var(--red)}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:20;background:rgba(246,244,238,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.nav .brand{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:17px;text-decoration:none}
+.nav .brand span{color:var(--red)}
+.nav .links{display:flex;gap:18px;font-size:13px;font-weight:700}
+.nav .links a{text-decoration:none;color:var(--sub)}
+.nav .links a:hover{color:var(--ink)}
+
+/* hero */
+.hero{padding:72px 0 80px}
+.hero .grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(46px,7vw,84px);line-height:1.1;letter-spacing:-.01em}
+.hero h1 .neko{color:var(--red)}
+.hero .tag{font-size:clamp(17px,2vw,21px);font-weight:700;margin:14px 0 22px}
+.hero .copy{color:var(--sub);font-size:16px;margin-bottom:28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:34px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;font-weight:700;font-size:15px;text-decoration:none;
+  transition:transform .12s var(--spring),box-shadow .12s ease}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.pri{background:var(--red);color:#fff;box-shadow:0 8px 20px rgba(214,40,40,.28)}
+.btn.sec{background:var(--ink);color:#fff}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0) scale(.98)}
+.steps{border-top:2px solid var(--ink);padding-top:18px}
+.steps .h{font-weight:700;font-size:14px;letter-spacing:.06em;margin-bottom:12px}
+.steps ol{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.steps li{display:grid;grid-template-columns:30px 1fr;gap:10px;align-items:start;font-size:15px}
+.steps li i{font-style:normal;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;color:var(--red);font-size:20px;line-height:1.3}
+.steps li small{display:block;color:var(--sub);font-size:13px}
+.stage{position:relative;display:grid;place-items:center}
+.stage::before{content:"";position:absolute;width:78%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(214,40,40,.18),transparent 70%);filter:blur(8px)}
+.cover{position:relative;width:min(420px,100%);border-radius:14px;
+  transform:perspective(1200px) rotateY(-7deg) rotateX(2deg);
+  box-shadow:0 2px 6px rgba(28,27,34,.10),0 14px 28px rgba(28,27,34,.14),0 36px 60px rgba(28,27,34,.18);
+  animation:in .9s var(--ease-out) both}
+@keyframes in{from{opacity:0;transform:perspective(1200px) rotateY(-7deg) translateY(26px) scale(.97)}to{opacity:1;transform:perspective(1200px) rotateY(-7deg) translateY(0) scale(1)}}
+.cover img{border-radius:14px}
+
+/* about */
+.quote{border-left:6px solid var(--red);padding:6px 0 6px 22px;margin:0 0 36px}
+.quote h3{font-size:clamp(22px,2.8vw,30px)}
+.quote small{display:block;color:var(--sub);font-size:14px;margin-top:8px}
+.rules{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line)}
+.rules div{padding:22px 22px 22px 0;border-bottom:1px solid var(--line)}
+.rules div+div{padding-left:22px;border-left:1px solid var(--line)}
+.rules b{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:18px;margin-bottom:6px}
+.rules b i{font-style:normal;color:var(--red);margin-right:8px}
+.rules p{font-size:14px;color:var(--sub)}
+
+/* cast */
+.cast{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.person{display:grid;grid-template-columns:84px 1fr;gap:20px;align-items:start}
+.avatar{width:84px;height:84px;border-radius:50%;display:grid;place-items:center;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:30px;color:#fff}
+.avatar.a{background:var(--red)} .avatar.b{background:var(--ink)}
+.person .role{font-size:13px;font-weight:700;letter-spacing:.1em;color:var(--red)}
+.person h3{font-size:24px;margin:2px 0 8px}
+.person p{font-size:15px;color:var(--sub)}
+
+/* format */
+.kata{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-bottom:48px}
+.kata div{padding-top:18px;border-top:3px solid var(--ink)}
+.kata .n{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:34px;color:var(--red);line-height:1}
+.kata h3{font-size:22px;margin:10px 0 8px}
+.kata p{font-size:15px;color:var(--sub)}
+.tl{display:grid;grid-template-columns:repeat(5,1fr);gap:4px}
+.tl div{background:var(--white);padding:14px 14px 12px;border-bottom:4px solid var(--line)}
+.tl div.hi{border-bottom-color:var(--red)}
+.tl b{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:22px;font-variant-numeric:tabular-nums}
+.tl b small{font-size:13px;font-weight:700;margin-left:2px}
+.tl span{display:block;font-size:14px;font-weight:700;margin-top:2px}
+.tl em{display:block;font-style:normal;font-size:13px;color:var(--sub)}
+.sec.alt .tl div{background:var(--paper)}
+
+/* flow */
+.flow{display:grid;grid-template-columns:repeat(3,1fr);gap:34px 40px;counter-reset:s;margin-bottom:44px}
+.step{position:relative;padding-left:0}
+.step b{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:19px;margin:6px 0 6px}
+.step .n{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:14px;letter-spacing:.12em;color:var(--red)}
+.step p{font-size:14px;color:var(--sub)}
+.assure{background:var(--ink);color:#fff;border-radius:18px;padding:28px 30px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.assure b{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:18px;margin-bottom:4px}
+.assure p{font-size:14px;color:#CFCBD9}
+
+/* case */
+.case-head{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end;margin-bottom:28px}
+.stats{display:flex;gap:28px}
+.stat{text-align:right}
+.stat b{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:40px;line-height:1;font-variant-numeric:tabular-nums}
+.stat span{font-size:13px;color:var(--sub);font-weight:700}
+.case-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px}
+.verdict{border-left:6px solid var(--red);padding-left:22px;margin-bottom:26px}
+.verdict h3{font-size:clamp(22px,2.6vw,28px)}
+.verdict small{display:block;color:var(--sub);font-size:14px;margin-top:6px}
+.todo{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.todo li{display:grid;grid-template-columns:28px 1fr;gap:10px;font-size:15px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.todo li i{font-style:normal;color:var(--red);font-weight:900;font-family:"Zen Kaku Gothic New",sans-serif}
+.todo li span{display:block;color:var(--sub);font-size:13px}
+.voice{background:var(--white);border-radius:18px;padding:26px 28px}
+.sec.alt .voice{background:var(--paper)}
+.voice p{font-size:16px;font-weight:700;line-height:1.8}
+.voice small{display:block;color:var(--sub);font-size:13px;margin-top:10px}
+.take{margin-top:22px;font-size:14px;color:var(--sub)}
+.take b{color:var(--ink)}
+
+/* episodes */
+.eps{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.eps li{display:grid;grid-template-columns:56px 1fr auto;gap:18px;align-items:center;padding:20px 0;border-bottom:1px solid var(--line)}
+.eps .no{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:22px;color:var(--red)}
+.eps .t{font-weight:700;font-size:16px}
+.eps .t small{display:block;font-weight:400;color:var(--sub);font-size:13px}
+.eps a.play{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:14px;padding:9px 16px;border-radius:999px;background:var(--ink);color:#fff;white-space:nowrap}
+.eps .soon{font-size:13px;font-weight:700;color:var(--sub);padding:9px 16px;border:1.5px solid var(--line);border-radius:999px;white-space:nowrap}
+
+/* next */
+.next{display:grid;grid-template-columns:1fr 1fr;gap:28px 48px}
+.next div{border-top:1px solid var(--line);padding-top:16px}
+.next .chip{display:inline-block;font-size:13px;font-weight:700;padding:3px 10px;border-radius:999px;background:var(--red);color:#fff;margin-bottom:8px}
+.next .chip.gray{background:var(--line);color:var(--ink)}
+.next h3{font-size:21px;margin-bottom:6px}
+.next p{font-size:14px;color:var(--sub)}
+
+/* links */
+.linklist{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.linklist li{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line)}
+.linklist b{font-size:15px}
+.linklist small{display:block;color:var(--sub);font-size:13px}
+.linklist a{font-size:14px;font-weight:700;color:var(--red-ink)}
+.cta-end{margin-top:40px;background:var(--ink);color:#fff;border-radius:22px;padding:36px 34px;display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center}
+.cta-end h3{font-size:clamp(22px,3vw,30px)}
+.cta-end p{color:#CFCBD9;font-size:15px;margin-top:6px}
+footer{padding:36px 0 48px;font-size:13px;color:var(--sub)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+.reveal{animation:reveal-in linear both;animation-timeline:view();animation-range:entry 5% cover 28%}
+@keyframes reveal-in{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@supports not (animation-timeline:view()){.reveal{animation:none;opacity:1;transform:none}}
+:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+@media(max-width:860px){
+  .sec{padding:64px 0}
+  .hero{padding:44px 0 56px}
+  .hero .grid{grid-template-columns:1fr;gap:36px}
+  .stage{order:-1}
+  .cover{width:min(300px,80%)}
+  .nav .links{display:none}
+  .rules,.kata,.flow,.assure,.cast,.case-grid,.next{grid-template-columns:1fr}
+  .rules div+div{padding-left:0;border-left:0}
+  .tl{grid-template-columns:repeat(5,1fr)}
+  .tl div{padding:10px 8px}
+  .tl b{font-size:17px}
+  .tl span{font-size:13px}
+  .tl em{display:none}
+  .case-head{grid-template-columns:1fr}
+  .stats{justify-content:flex-start}
+  .stat{text-align:left}
+  .eps li{grid-template-columns:44px 1fr;gap:12px}
+  .eps li>a.play,.eps li>.soon{grid-column:2}
+  .cta-end{grid-template-columns:1fr}
+  .cta-end .btn{justify-self:start}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav"><div class="wrap">
+  <a class="brand" href="#top">愛の<span>猫</span>パンチ</a>
+  <div class="links"><a href="#about">番組とは</a><a href="#cast">出演</a><a href="#flow">ゲスト回の流れ</a><a href="#case">実例</a><a href="#eps">エピソード</a><a href="#next">これから</a></div>
+</div></nav>
+
+<header id="top" class="sec hero"><div class="wrap grid">
+  <div>
+    <span class="eyebrow">マーケプロの業界口出し系ポッドキャスト</span>
+    <h1>愛の<span class="neko">猫</span>パンチ</h1>
+    <p class="tag">頼まれてもいないのに、あなたの商売に「俺ならこうする」。</p>
+    <p class="copy">マーケティングのプロが、釣り・民泊・歯医者・ツアーガイドなど身近な商売の「もったいない」に猫パンチする番組です。批評で終わらせず、明日やれる一手まで爪を立てます。愛の猫パンチは、その商売にまだ牙があると信じているから。</p>
+    <div class="cta">
+      <a class="btn pri" href="https://open.spotify.com/show/033SdHMot0yrMpyGbboAYc" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm4.6 14.4a.7.7 0 0 1-1 .2c-2.6-1.6-5.9-2-9.8-1.1a.7.7 0 0 1-.3-1.4c4.2-1 7.9-.5 10.8 1.3.3.2.4.7.3 1zm1.2-2.7a.9.9 0 0 1-1.2.3c-3-1.8-7.5-2.4-11-1.3a.9.9 0 0 1-.5-1.7c4-1.2 9-.6 12.4 1.5.4.2.5.8.3 1.2zm.1-2.8C14.3 8.8 8.4 8.6 5 9.6a1 1 0 0 1-.6-2c3.9-1.2 10.4-1 14.5 1.5a1 1 0 0 1-1 1.8z"/></svg>Spotifyで聴く</a>
+      <a class="btn sec" href="https://forms.gle/DHtyPdeBFkCN56rR8" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>ゲスト・提案依頼フォーム</a>
+    </div>
+    <div class="steps">
+      <div class="h">このページを受け取ったあなたへ（所要5分）</div>
+      <ol>
+        <li><i>1</i><div>このページを一度読む<small>番組の中身と、ゲスト回で何が起きるかが分かります</small></div></li>
+        <li><i>2</i><div>相談したいことを1〜2行で送る<small>上のフォームから。すでにユウキと話している方はLINEで一言でOK</small></div></li>
+        <li><i>3</i><div>届いた日程投票に○△×を付ける<small>候補枠から選ぶだけ。全員○の枠で収録日が決まります</small></div></li>
+      </ol>
+    </div>
+  </div>
+  <div class="stage"><div class="cover"><img src="cover.jpg" width="1200" height="1200" alt="愛の猫パンチ カバーアート"></div></div>
+</div></header>
+
+<section id="about" class="sec alt"><div class="wrap reveal">
+  <span class="eyebrow">番組とは</span>
+  <h2 class="sec-t">「もったいない」に、愛のある口出しをする番組。</h2>
+  <p class="sec-lead">出演者2人のうち1人が現役の企業マーケ担当。身近な商売の課題を持ち込み、頼まれてもいないのに改善案を言い切ります。目指すのは、聴いた人の商売の「きっかけ」になること。</p>
+  <div class="quote"><h3>マーケティングという手段で、企業や業界の背中を押したい。</h3><small>ユウイチ（第1回より）</small></div>
+  <div class="rules">
+    <div><b><i>一</i>公開情報だけで語る</b><p>報道・IR・実際の売り場や広告など、誰でも見られるものだけを根拠にします。</p></div>
+    <div><b><i>二</i>内部情報は話さない</b><p>自社・取引先・内部の話はしません。ゲストの話も、公開してよい範囲だけ。</p></div>
+    <div><b><i>三</i>批判には代案とリスペクト</b><p>猫パンチであってフルスイングではありません。同業者の、愛あるツッコミです。</p></div>
+  </div>
+</div></section>
+
+<section id="cast" class="sec"><div class="wrap reveal">
+  <span class="eyebrow">出演</span>
+  <h2 class="sec-t">猫パンチする人と、噛み砕く人。</h2>
+  <p class="sec-lead">難しいマーケの言葉は、生徒役のユウキがその場で聞き直します。専門知識がなくても、ゲストは自分の商売の話をするだけで大丈夫です。</p>
+  <div class="cast">
+    <div class="person"><div class="avatar a">柳</div><div><div class="role">猫パンチ担当</div><h3>ユウイチ（柳猫）</h3><p>現役の企業マーケ担当。番組では名前だけを出し、所属は非公開。課題に猫パンチし、「俺ならこうする」と代案を言い切る側。</p></div></div>
+    <div class="person"><div class="avatar b">ユ</div><div><div class="role">生徒担当・進行・編集</div><h3>ユウキ</h3><p>聞き手。秋葉原でアニメ聖地ツアーのガイドをしていて、自分も集客に悩む側。難しい言葉をわかりやすく噛み砕いて聞き直す。</p></div></div>
+  </div>
+</div></section>
+
+<section id="format" class="sec alt"><div class="wrap reveal">
+  <span class="eyebrow">番組の型</span>
+  <h2 class="sec-t">壱・弐・参で、明日やれる一手まで。</h2>
+  <div class="kata">
+    <div><div class="n">壱</div><h3>業界の課題を持ち込む</h3><p>釣り・民泊・歯医者・ツアーガイド。身近な商売の「もったいない」が題材。ゲスト回では、あなたの商売がここに入ります。</p></div>
+    <div><div class="n">弐</div><h3>頼まれてもいないのに猫パンチ</h3><p>「俺ならこうする」と、勝手に改善案を出します。番組いちばんの見せ場。</p></div>
+    <div><div class="n">参</div><h3>明日やれる一手まで爪を立てる</h3><p>批評で終わらせません。収録の最後に「明日やること」を一緒に決めます。</p></div>
+  </div>
+  <div class="tl">
+    <div><b>3<small>分</small></b><span>今日の題材</span><em>どの商売・どの課題か</em></div>
+    <div><b>10<small>分</small></b><span>猫パンチ</span><em>現場目線でツッコむ</em></div>
+    <div class="hi"><b>10<small>分</small></b><span>俺ならこうする</span><em>代案を言い切る見せ場</em></div>
+    <div><b>5<small>分</small></b><span>噛み砕き</span><em>要点をやさしく整理</em></div>
+    <div><b>2<small>分</small></b><span>締め</span><em>次回予告・お便り募集</em></div>
+  </div>
+</div></section>
+
+<section id="flow" class="sec"><div class="wrap reveal">
+  <span class="eyebrow">ゲスト回の流れ</span>
+  <h2 class="sec-t">相談を一言送るところから、公開まで。</h2>
+  <p class="sec-lead">準備するものはありません。「今、商売で困っていること」を持ってきてもらえれば、あとは番組側で進めます。</p>
+  <div class="flow">
+    <div class="step"><div class="n">STEP 1</div><b>相談を一言送る</b><p>フォームかLINEで「集客がうまくいかない」程度の一言でOK。長文は要りません。</p></div>
+    <div class="step"><div class="n">STEP 2</div><b>3人のLINEグループ</b><p>ユウキ・ユウイチ・あなたの連絡用グループを作ります。やりとりはここだけ。</p></div>
+    <div class="step"><div class="n">STEP 3</div><b>日程投票</b><p>候補枠に○△×を付けるだけ。全員○の枠で収録日が決まります。</p></div>
+    <div class="step"><div class="n">STEP 4</div><b>オンラインで60分</b><p>Zoomで音声のみ。前後の雑談込みで1時間ほど。カメラは不要です。</p></div>
+    <div class="step"><div class="n">STEP 5</div><b>収録まとめをお渡し</b><p>編集と並行して、話した内容と「明日やること」をA4数枚にまとめてお渡しします。</p></div>
+    <div class="step"><div class="n">STEP 6</div><b>公開、そして「お返事回」</b><p>業界名入りのタイトルで公開。数ヶ月後、やってみた結果を話しに来る続編も歓迎です。</p></div>
+  </div>
+  <div class="assure">
+    <div><b>準備も費用も不要</b><p>台本なし。相談に来るつもりで、そのままの言葉で話してください。</p></div>
+    <div><b>カットは自由</b><p>「ここは出したくない」は収録中でも収録後でも遠慮なく。必ず切ります。</p></div>
+    <div><b>呼び名は自由</b><p>本名は不要。ラジオネームでも下の名前でも、希望どおりに紹介します。</p></div>
+  </div>
+</div></section>
+
+<section id="case" class="sec alt"><div class="wrap reveal">
+  <span class="eyebrow">実例</span>
+  <div class="case-head">
+    <div><h2 class="sec-t">金沢のインバウンドガイド、ゆりさんの回。</h2><p class="sec-lead" style="margin:0">「看護師の資格を活かして、どう差別化するか」の相談で来てくれました。結論は、直すべき中身が無いということ。</p></div>
+    <div class="stats"><div class="stat"><b>★5.0</b><span>Viator評価</span></div><div class="stat"><b>120</b><span>レビュー数・2年目</span></div><div class="stat"><b>100%</b><span>推奨率</span></div></div>
+  </div>
+  <div class="case-grid">
+    <div>
+      <div class="verdict"><h3>「一言で言うと、どうパッケージするか。見せ方だけ。」</h3><small>ユウイチの結論。「今日の猫パンチは、ちょんってしただけ。距離を測ったぐらい」</small></div>
+      <ul class="todo">
+        <li><i>1</i><div>タイトルを変える<span>Local Guide から Local Nurse へ。説明文の1行目は98%読まれていない。必ず見るタイトルに、自分のネタを仕込む</span></div></li>
+        <li><i>2</i><div>写真を差し替える<span>トップ画像を「場所」から「人が楽しんでいる空気感」へ</span></div></li>
+        <li><i>3</i><div>新ネタを仕込む<span>資格を足すのではなく、医療×社会・文化の話のストックを増やす</span></div></li>
+      </ul>
+    </div>
+    <div>
+      <div class="voice"><p>「やっぱ焦ってたんだなあ、みたいな。自分のいいところが見えなくなってたなあ、って思いました。」</p><small>ゆりさん（収録の終わりに）</small></div>
+      <p class="take"><b>ゲストが持ち帰ったもの:</b> 明日やること3つ、収録まとめ（A4・5枚）、収録では時間切れで話せなかった追加提案4つ（商品ページの矛盾を消す、写真を無料サービスのままにしない、上の価格帯を1本作る、事前のやりとりを工数として書く）。</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="eps" class="sec"><div class="wrap reveal">
+  <span class="eyebrow">エピソード</span>
+  <h2 class="sec-t">これまでの猫パンチ。</h2>
+  <p class="sec-lead">2026年7月始動。隔週から月1のペースで、続々収録中です。</p>
+  <ul class="eps">
+    <li><span class="no">#1</span><div class="t">マーケ課題は「掛け算」で解ける。業界の背中を押す新感覚番組始動！<small>番組のコンセプトと、ユウイチ流「マーケティング」の定義。釣りと民泊に「俺ならこうする」</small></div><a class="play" href="https://open.spotify.com/episode/0TjGoTPhzlOjAzpPausf1u" target="_blank" rel="noopener">▶ 聴く</a></li>
+    <li><span class="no">#2</span><div class="t">【歯医者】嫌われる場所から選ばれる場所へ！患者第一のマーケティング施策とは？<small>「行きたくない歯医者」を「選ばれる歯医者」に変える、予防歯科とAI導入の差別化戦略</small></div><a class="play" href="https://open.spotify.com/episode/3wNQ0tZWk1HG0HiYUfa2yW" target="_blank" rel="noopener">▶ 聴く</a></li>
+    <li><span class="no">#3</span><div class="t">【ツアーガイド】看護師スキルで金沢を差別化！<small>初のゲスト回。ゆりさん（金沢インバウンドガイド）の相談に猫パンチ</small></div><span class="soon">編集済・公開準備中</span></li>
+  </ul>
+</div></section>
+
+<section id="next" class="sec alt"><div class="wrap reveal">
+  <span class="eyebrow">これからやりたいこと</span>
+  <h2 class="sec-t">口出しで終わらせない仕掛けを、順に作っています。</h2>
+  <div class="next">
+    <div><span class="chip">いま募集中</span><h3>ゲスト回（公開猫パンチ）</h3><p>集客やマーケに困っている人が、自分の商売を持ち込む回。フォームの「提案依頼」から応募。このページはそのためのものです。</p></div>
+    <div><span class="chip">続編</span><h3>お返事回</h3><p>猫パンチされた人が、数ヶ月後に「やってみた結果」を話しに来る回。ゆりさんのタイトル変更がその第1号になる予定。</p></div>
+    <div><span class="chip gray">構想中</span><h3>勝手に提案書1枚</h3><p>各回の「俺ならこうする」をA4の提案書PDFにして概要欄に置く。決裁者が持ち帰れる形にする。</p></div>
+    <div><span class="chip gray">続けること</span><h3>業界名入りタイトルで、隔週〜月1</h3><p>その業界の人が自分の業界名で検索して見つけられるように。まずは3ヶ月で6本公開が目標。</p></div>
+  </div>
+</div></section>
+
+<section id="links" class="sec"><div class="wrap reveal">
+  <span class="eyebrow">リンク</span>
+  <h2 class="sec-t">番組の入り口はここから。</h2>
+  <ul class="linklist">
+    <li><div><b>Spotify 番組ページ</b><small>全エピソードはこちら。フォローすると新着が届きます</small></div><a href="https://open.spotify.com/show/033SdHMot0yrMpyGbboAYc" target="_blank" rel="noopener">open.spotify.com</a></li>
+    <li><div><b>お便り・提案依頼フォーム</b><small>ゲスト応募、感想、質問はすべてこの1つのフォームから</small></div><a href="https://forms.gle/DHtyPdeBFkCN56rR8" target="_blank" rel="noopener">forms.gle</a></li>
+    <li><div><b>このページ</b><small>ゲスト候補の方に渡す用。そのままシェアしてください</small></div><a href="https://yukitchy.github.io/nekopunch-guest/">yukitchy.github.io/nekopunch-guest</a></li>
+  </ul>
+  <div class="cta-end">
+    <div><h3>うちの商売にも、猫パンチしてほしい。</h3><p>そう思ったら、相談したいことを1〜2行で。あとは番組側で進めます。</p></div>
+    <a class="btn pri" href="https://forms.gle/DHtyPdeBFkCN56rR8" target="_blank" rel="noopener">提案依頼を送る</a>
+  </div>
+</div></section>
+
+<footer><div class="wrap"><span>愛の猫パンチ｜マーケプロの業界口出し系ポッドキャスト</span><span>2026.7 始動</span></div></footer>
+</body>
+</html>
