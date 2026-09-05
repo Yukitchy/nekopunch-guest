@@ -23,7 +23,8 @@ body{margin:0;background:var(--paper);color:var(--ink);
   font-family:"Noto Sans JP",-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN",sans-serif;
   font-size:16px;line-height:1.85;-webkit-font-smoothing:antialiased}
 body,p,li,td,th,div,span,b,small,summary,button,a,h1,h2,h3,h4{word-break:auto-phrase;line-break:strict;overflow-wrap:anywhere}
-h1,h2,h3,h4,.btn,.chip,.eyebrow,.sec-t,.step b,.stat b{text-wrap:balance}
+h1,h2,h3,h4,.chip,.eyebrow,.sec-t,.step b{text-wrap:balance}
+.btn,.stat b,.eps a.play{white-space:nowrap}
 p,.a{text-wrap:pretty}
 h1,h2,h3,h4{font-family:"Zen Kaku Gothic New","Noto Sans JP",sans-serif;font-weight:900;line-height:1.35;letter-spacing:.01em;margin:0}
 p{margin:0;max-width:62ch}
@@ -190,11 +191,15 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   .nav .links{display:none}
   .rules,.kata,.flow,.assure,.cast,.case-grid,.next{grid-template-columns:1fr}
   .rules div+div{padding-left:0;border-left:0}
-  .tl{grid-template-columns:repeat(5,1fr)}
-  .tl div{padding:10px 8px}
-  .tl b{font-size:17px}
-  .tl span{font-size:13px}
-  .tl em{display:none}
+  .tl{grid-template-columns:1fr;gap:2px}
+  .tl div{display:grid;grid-template-columns:64px 1fr;column-gap:12px;align-items:baseline;padding:10px 14px;border-bottom:0;border-left:4px solid var(--line)}
+  .tl div.hi{border-left-color:var(--red)}
+  .tl b{font-size:20px}
+  .tl em{grid-column:2}
+  .stats{gap:20px}
+  .stat b{font-size:30px}
+  .linklist li{grid-template-columns:1fr;gap:6px}
+  .linklist a{overflow-wrap:anywhere}
   .case-head{grid-template-columns:1fr}
   .stats{justify-content:flex-start}
   .stat{text-align:left}
