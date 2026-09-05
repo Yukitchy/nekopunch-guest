@@ -95,8 +95,7 @@ img{max-width:100%;height:auto;display:block}
 /* cast */
 .cast{display:grid;grid-template-columns:1fr 1fr;gap:40px}
 .person{display:grid;grid-template-columns:84px 1fr;gap:20px;align-items:start}
-.avatar{width:84px;height:84px;border-radius:50%;display:grid;place-items:center;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:30px;color:#fff}
-.avatar.a{background:var(--red)} .avatar.b{background:var(--ink)}
+.avatar{width:84px;height:84px;border-radius:50%;object-fit:cover}
 .person .role{font-size:13px;font-weight:700;letter-spacing:.1em;color:var(--red)}
 .person h3{font-size:24px;margin:2px 0 8px}
 .person p{font-size:15px;color:var(--sub)}
@@ -255,8 +254,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   <span class="eyebrow">出演</span>
     <p class="sec-lead">難しいマーケの言葉は、生徒役のユウキがその場で聞き直します。専門知識がなくても、ゲストは自分の商売の話をするだけで大丈夫です。</p>
   <div class="cast">
-    <div class="person"><div class="avatar a">柳</div><div><div class="role">猫パンチ担当</div><h3>ユウイチ（柳猫）</h3><p>現役の企業マーケ担当。番組では名前だけを出し、所属は非公開。課題に猫パンチし、「俺ならこうする」と代案を言い切る側。</p></div></div>
-    <div class="person"><div class="avatar b">ユ</div><div><div class="role">生徒担当・進行・編集</div><h3>ユウキ</h3><p>聞き手。秋葉原でアニメ聖地ツアーのガイドをしていて、自分も集客に悩む側。難しい言葉をわかりやすく噛み砕いて聞き直す。</p></div></div>
+    <div class="person"><img class="avatar" src="yuichi.jpg" width="240" height="240" alt="ユウイチ（柳猫）"><div><div class="role">猫パンチ担当</div><h3>ユウイチ（柳猫）</h3><p>現役の企業マーケ担当。番組では名前だけを出し、所属は非公開。課題に猫パンチし、「俺ならこうする」と代案を言い切る側。</p></div></div>
+    <div class="person"><img class="avatar" src="yuuki.jpg" width="240" height="240" alt="ユウキ"><div><div class="role">生徒担当・進行・編集</div><h3>ユウキ</h3><p>聞き手。秋葉原でアニメ聖地ツアーのガイドをしていて、自分も集客に悩む側。難しい言葉をわかりやすく噛み砕いて聞き直す。</p></div></div>
   </div>
 </div></section>
 
@@ -264,8 +263,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   <span class="eyebrow">番組の型</span>
     <div class="kata">
     <div><div class="n">壱</div><h3>業界の課題を持ち込む</h3><p>釣り・民泊・歯医者・ツアーガイド。身近な商売の「もったいない」が題材。ゲスト回では、あなたの商売がここに入ります。</p></div>
-    <div><div class="n">弐</div><h3>頼まれてもいないのに猫パンチ</h3><p>「俺ならこうする」と、勝手に改善案を出します。番組いちばんの見せ場。</p></div>
-    <div><div class="n">参</div><h3>明日やれる一手まで爪を立てる</h3><p>批評で終わらせません。収録の最後に「明日やること」を一緒に決めます。</p></div>
+    <div><div class="n">弐</div><h3>猫パンチ</h3><p>「俺ならこうする」と改善案を出します。番組いちばんの見せ場。</p></div>
+    <div><div class="n">参</div><h3>明日やることまで決める</h3><p>批評で終わらせません。収録の最後に「明日やること」を一緒に決めます。</p></div>
   </div>
 </div></section>
 
