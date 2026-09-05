@@ -33,7 +33,7 @@ img{max-width:100%;height:auto;display:block}
 .wrap{max-width:1040px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
 .eyebrow{display:block;font-family:"Zen Kaku Gothic New","Noto Sans JP",sans-serif;font-size:clamp(24px,3vw,32px);font-weight:900;letter-spacing:.02em;color:var(--ink);margin-bottom:14px;line-height:1.35}
 .eyebrow::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--red);margin-right:12px;vertical-align:middle}
-.sec{position:relative;overflow:hidden;padding:88px 0}
+.sec{position:relative;overflow:hidden;padding:64px 0}
 .sec.alt{background:var(--white)}
 .sec::before{content:"";position:absolute;pointer-events:none;z-index:0}
 .sec:nth-of-type(4n+1)::before{top:-40px;right:-60px;width:260px;height:260px;background:var(--deco);border-radius:0 0 0 100%}
@@ -143,7 +143,7 @@ img{max-width:100%;height:auto;display:block}
 .sec.alt .voice{background:var(--paper)}
 .voice p{font-size:16px;font-weight:700;line-height:1.8}
 .voice small{display:block;color:var(--sub);font-size:13px;margin-top:10px}
-.take{margin-top:22px;font-size:14px;color:var(--sub)}
+.take{margin-top:22px;font-size:15px;color:var(--sub)}
 .take b{color:var(--ink)}
 
 /* episodes */
@@ -169,7 +169,7 @@ img{max-width:100%;height:auto;display:block}
 .linklist b{font-size:15px}
 .linklist small{display:block;color:var(--sub);font-size:13px}
 .linklist a{font-size:14px;font-weight:700;color:var(--red-ink)}
-.cta-end{margin-top:40px;background:var(--ink);color:#fff;border-radius:22px;padding:36px 34px;display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center}
+.cta-end{margin-top:0;background:var(--ink);color:#fff;border-radius:22px;padding:36px 34px;display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center}
 .cta-end h3{font-size:clamp(22px,3vw,30px)}
 .cta-end p{color:#CFCBD9;font-size:15px;margin-top:6px}
 footer{padding:36px 0 48px;font-size:13px;color:var(--sub)}
@@ -210,10 +210,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 </style>
 </head>
 <body>
-
 <nav class="nav"><div class="wrap">
   <a class="brand" href="#top">愛の<span>猫</span>パンチ</a>
-  <div class="links"><a href="#about">どんな番組？</a><a href="#cast">出演</a><a href="#flow">ゲスト回の流れ</a><a href="#case">実例</a><a href="#eps">エピソード</a><a href="#next">これから</a></div>
+  <div class="links"><a href="#about">どんな番組？</a><a href="#cast">出演</a><a href="#flow">ゲスト回の流れ</a><a href="#case">実例</a><a href="#eps">エピソード</a></div>
 </div></nav>
 
 <header id="top" class="sec hero"><div class="wrap grid">
@@ -223,17 +222,17 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   </div>
   <div class="stage"><div class="cover"><img src="cover.jpg" width="1200" height="1200" alt="愛の猫パンチ カバーアート"></div></div>
   <div class="body">
-    <p class="copy">マーケティングのプロが、釣り・民泊・歯医者・ツアーガイドなど身近な商売の「もったいない」に猫パンチする番組です。批評で終わらせず、明日やれる一手まで爪を立てます。愛の猫パンチは、その商売にまだ牙があると信じているから。</p>
+    <p class="copy">現役のマーケ担当が、釣り・民泊・歯医者・ツアーガイドなど身近な商売の課題に改善案を出す番組です。集客やマーケに困っている人をゲストに迎えます。</p>
     <div class="cta">
       <a class="btn pri" href="https://open.spotify.com/show/033SdHMot0yrMpyGbboAYc" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm4.6 14.4a.7.7 0 0 1-1 .2c-2.6-1.6-5.9-2-9.8-1.1a.7.7 0 0 1-.3-1.4c4.2-1 7.9-.5 10.8 1.3.3.2.4.7.3 1zm1.2-2.7a.9.9 0 0 1-1.2.3c-3-1.8-7.5-2.4-11-1.3a.9.9 0 0 1-.5-1.7c4-1.2 9-.6 12.4 1.5.4.2.5.8.3 1.2zm.1-2.8C14.3 8.8 8.4 8.6 5 9.6a1 1 0 0 1-.6-2c3.9-1.2 10.4-1 14.5 1.5a1 1 0 0 1-1 1.8z"/></svg>Spotifyで聴く</a>
       <a class="btn dark" href="https://forms.gle/DHtyPdeBFkCN56rR8" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>ゲスト・提案依頼フォーム</a>
     </div>
     <div class="steps">
-      <div class="h">このページを受け取ったあなたへ（所要5分）</div>
+      <div class="h">ゲスト候補の方へ（所要5分）</div>
       <ol>
-        <li><i>1</i><div>このページを一度読む<small>番組の中身と、ゲスト回で何が起きるかが分かります</small></div></li>
-        <li><i>2</i><div>相談したいことを1〜2行で送る<small>上のフォームから。すでにユウキと話している方はLINEで一言でOK</small></div></li>
-        <li><i>3</i><div>届いた日程投票に○△×を付ける<small>候補枠から選ぶだけ。全員○の枠で収録日が決まります</small></div></li>
+        <li><i>1</i><div>このページを読む</div></li>
+        <li><i>2</i><div>相談したいことを1〜2行で送る<small>上のフォームから。ユウキと話している方はLINEで一言でOK</small></div></li>
+        <li><i>3</i><div>届いた日程投票に○△×を付ける</div></li>
       </ol>
     </div>
   </div>
@@ -241,106 +240,68 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 <section id="about" class="sec alt"><div class="wrap reveal">
   <span class="eyebrow">どんな番組？</span>
-    <p class="sec-lead">出演者2人のうち1人が現役の企業マーケ担当。目指すのは、聴いた人の商売の「きっかけ」になること。</p>
-  <div class="quote"><h3>マーケティングという手段で、企業や業界の背中を押したい。</h3><small>ユウイチ（第1回より）</small></div>
+  <p class="sec-lead">出演者2人のうち1人が現役の企業マーケ担当。身近な商売の課題を取り上げ、「俺ならこうする」と改善案を出し、明日やることまで決めます。目指すのは、聴いた人の商売のきっかけになること。</p>
   <div class="rules">
-    <div><b><i>一</i>公開情報だけで語る</b><p>報道・IR・実際の売り場や広告など、誰でも見られるものだけを根拠にします。</p></div>
-    <div><b><i>二</i>内部情報は話さない</b><p>自社・取引先・内部の話はしません。ゲストの話も、公開してよい範囲だけ。</p></div>
-    <div><b><i>三</i>批判には代案とリスペクト</b><p>猫パンチであってフルスイングではありません。同業者の、愛あるツッコミです。</p></div>
+    <div><b><i>一</i>公開情報だけで語る</b><p>誰でも見られる情報だけを根拠にします。</p></div>
+    <div><b><i>二</i>内部情報は話さない</b><p>ゲストの話も、公開してよい範囲だけ。</p></div>
+    <div><b><i>三</i>批判には代案を添える</b><p>相手の商売への敬意は忘れません。</p></div>
   </div>
 </div></section>
 
 <section id="cast" class="sec"><div class="wrap reveal">
   <span class="eyebrow">出演</span>
-    <p class="sec-lead">難しいマーケの言葉は、生徒役のユウキがその場で聞き直します。専門知識がなくても、ゲストは自分の商売の話をするだけで大丈夫です。</p>
   <div class="cast">
-    <div class="person"><img class="avatar" src="yuichi.jpg" width="240" height="240" alt="ユウイチ（柳猫）"><div><div class="role">猫パンチ担当</div><h3>ユウイチ（柳猫）</h3><p>現役の企業マーケ担当。番組では名前だけを出し、所属は非公開。課題に猫パンチし、「俺ならこうする」と代案を言い切る側。</p></div></div>
-    <div class="person"><img class="avatar" src="yuuki.jpg" width="240" height="240" alt="ユウキ"><div><div class="role">生徒担当・進行・編集</div><h3>ユウキ</h3><p>聞き手。秋葉原でアニメ聖地ツアーのガイドをしていて、自分も集客に悩む側。難しい言葉をわかりやすく噛み砕いて聞き直す。</p></div></div>
+    <div class="person"><img class="avatar" src="yuichi.jpg" width="240" height="240" alt="ユウイチ（柳猫）"><div><div class="role">猫パンチ担当</div><h3>ユウイチ（柳猫）</h3><p>現役の企業マーケ担当。名前だけを出し、所属は非公開。課題を指摘して代案を出す側。</p></div></div>
+    <div class="person"><img class="avatar" src="yuuki.jpg" width="240" height="240" alt="ユウキ"><div><div class="role">生徒担当・進行・編集</div><h3>ユウキ</h3><p>聞き手。秋葉原でアニメ聖地ツアーのガイド。自分も集客に悩む側で、難しい言葉はその場で聞き直す。</p></div></div>
   </div>
 </div></section>
 
-<section id="format" class="sec alt"><div class="wrap reveal">
-  <span class="eyebrow">番組の型</span>
-    <div class="kata">
-    <div><div class="n">壱</div><h3>業界の課題を持ち込む</h3><p>釣り・民泊・歯医者・ツアーガイド。身近な商売の「もったいない」が題材。ゲスト回では、あなたの商売がここに入ります。</p></div>
-    <div><div class="n">弐</div><h3>猫パンチ</h3><p>「俺ならこうする」と改善案を出します。番組いちばんの見せ場。</p></div>
-    <div><div class="n">参</div><h3>明日やることまで決める</h3><p>批評で終わらせません。収録の最後に「明日やること」を一緒に決めます。</p></div>
-  </div>
-</div></section>
-
-<section id="flow" class="sec"><div class="wrap reveal">
+<section id="flow" class="sec alt"><div class="wrap reveal">
   <span class="eyebrow">ゲスト回の流れ</span>
-    <p class="sec-lead">準備するものはありません。「今、商売で困っていること」を持ってきてもらえれば、あとは番組側で進めます。</p>
+  <p class="sec-lead">準備は不要です。今、商売で困っていることを話してもらえれば、あとは番組側で進めます。</p>
   <div class="flow">
-    <div class="step"><div class="n">STEP 1</div><b>相談を一言送る</b><p>フォームかLINEで「集客がうまくいかない」程度の一言でOK。長文は要りません。</p></div>
-    <div class="step"><div class="n">STEP 2</div><b>3人のLINEグループ</b><p>ユウキ・ユウイチ・あなたの連絡用グループを作ります。やりとりはここだけ。</p></div>
-    <div class="step"><div class="n">STEP 3</div><b>日程投票</b><p>候補枠に○△×を付けるだけ。全員○の枠で収録日が決まります。</p></div>
-    <div class="step"><div class="n">STEP 4</div><b>オンラインで60分</b><p>Zoomで音声のみ。前後の雑談込みで1時間ほど。カメラは不要です。</p></div>
-    <div class="step"><div class="n">STEP 5</div><b>収録まとめをお渡し</b><p>編集と並行して、話した内容と「明日やること」をA4数枚にまとめてお渡しします。</p></div>
-    <div class="step"><div class="n">STEP 6</div><b>公開、そして「お返事回」</b><p>業界名入りのタイトルで公開。数ヶ月後、やってみた結果を話しに来る続編も歓迎です。</p></div>
+    <div class="step"><div class="n">STEP 1</div><b>相談を一言送る</b><p>フォームかLINEで「集客がうまくいかない」程度の一言でOK。</p></div>
+    <div class="step"><div class="n">STEP 2</div><b>日程を決める</b><p>3人のLINEグループを作り、候補枠に○△×を付けるだけ。</p></div>
+    <div class="step"><div class="n">STEP 3</div><b>Zoomで60分</b><p>音声のみ。前後の雑談込みで1時間ほど。</p></div>
+    <div class="step"><div class="n">STEP 4</div><b>公開</b><p>編集後、話した内容と「明日やること」のまとめをお渡しして公開します。</p></div>
   </div>
   <div class="assure">
-    <div><b>準備も費用も不要</b><p>台本なし。相談に来るつもりで、そのままの言葉で話してください。</p></div>
-    <div><b>カットは自由</b><p>「ここは出したくない」は収録中でも収録後でも遠慮なく。必ず切ります。</p></div>
-    <div><b>呼び名は自由</b><p>本名は不要。ラジオネームでも下の名前でも、希望どおりに紹介します。</p></div>
+    <div><b>準備も費用も不要</b><p>台本はありません。普段の言葉で話してください。</p></div>
+    <div><b>カットは自由</b><p>出したくない部分は、収録中でも収録後でも言ってください。</p></div>
+    <div><b>呼び名は自由</b><p>本名は不要。希望どおりに紹介します。</p></div>
   </div>
 </div></section>
 
-<section id="case" class="sec alt"><div class="wrap reveal">
+<section id="case" class="sec"><div class="wrap reveal">
   <span class="eyebrow">実例</span>
   <div class="case-head">
-    <div><h2 class="sec-t">金沢のインバウンドガイド、ゆりさんの回。</h2><p class="sec-lead" style="margin:0">「看護師の資格を活かして、どう差別化するか」の相談で来てくれました。結論は、直すべき中身が無いということ。</p></div>
-    <div class="stats"><div class="stat"><b>★5.0</b><span>Viator評価</span></div><div class="stat"><b>120</b><span>レビュー数・2年目</span></div><div class="stat"><b>100%</b><span>推奨率</span></div></div>
+    <div><h2 class="sec-t">金沢のインバウンドガイド、ゆりさんの回</h2><p class="sec-lead" style="margin:0">相談は「看護師の資格を活かして、どう差別化するか」。結論は、直す中身は無く、見せ方だけ。その場で決めた「明日やること」は3つです。</p></div>
+    <div class="stats"><div class="stat"><b>★5.0</b><span>Viator評価</span></div><div class="stat"><b>120</b><span>レビュー数・2年目</span></div></div>
   </div>
-  <div class="case-grid">
-    <div>
-      <div class="verdict"><h3>「一言で言うと、どうパッケージするか。見せ方だけ。」</h3><small>ユウイチの結論。「今日の猫パンチは、ちょんってしただけ。距離を測ったぐらい」</small></div>
-      <ul class="todo">
-        <li><i>1</i><div>タイトルを変える<span>Local Guide から Local Nurse へ。説明文の1行目は98%読まれていない。必ず見るタイトルに、自分のネタを仕込む</span></div></li>
-        <li><i>2</i><div>写真を差し替える<span>トップ画像を「場所」から「人が楽しんでいる空気感」へ</span></div></li>
-        <li><i>3</i><div>新ネタを仕込む<span>資格を足すのではなく、医療×社会・文化の話のストックを増やす</span></div></li>
-      </ul>
-    </div>
-    <div>
-      <div class="voice"><p>「やっぱ焦ってたんだなあ、みたいな。自分のいいところが見えなくなってたなあ、って思いました。」</p><small>ゆりさん（収録の終わりに）</small></div>
-      <p class="take"><b>ゲストが持ち帰ったもの:</b> 明日やること3つと、収録まとめ（A4・5枚）。さらに収録では時間切れで話せなかった追加提案が4つ。商品ページの矛盾を消す、写真を無料サービスのままにしない、上の価格帯を1本作る、事前のやりとりを工数として書く、の4点です。</p>
-    </div>
-  </div>
-</div></section>
-
-<section id="eps" class="sec"><div class="wrap reveal">
-  <span class="eyebrow">エピソード</span>
-    <p class="sec-lead">2026年7月始動。隔週から月1のペースで、続々収録中です。</p>
-  <ul class="eps">
-    <li><span class="no">#1</span><div class="t">マーケ課題は「掛け算」で解ける。業界の背中を押す新感覚番組始動！<small>番組のコンセプトと、ユウイチ流「マーケティング」の定義。釣りと民泊に「俺ならこうする」</small></div><a class="play" href="https://open.spotify.com/episode/0TjGoTPhzlOjAzpPausf1u" target="_blank" rel="noopener">▶ 聴く</a></li>
-    <li><span class="no">#2</span><div class="t">【歯医者】嫌われる場所から選ばれる場所へ！患者第一のマーケティング施策とは？<small>「行きたくない歯医者」を「選ばれる歯医者」に変える、予防歯科とAI導入の差別化戦略</small></div><a class="play" href="https://open.spotify.com/episode/3wNQ0tZWk1HG0HiYUfa2yW" target="_blank" rel="noopener">▶ 聴く</a></li>
-    <li><span class="no">#3</span><div class="t">【ツアーガイド】看護師スキルで金沢を差別化！<small>初のゲスト回。金沢のガイド、ゆりさんの相談</small></div><span class="soon">編集済・公開準備中</span></li>
+  <ul class="todo">
+    <li><i>1</i><div>タイトルを変える<span>Local Guide から Local Nurse へ。説明文の1行目は読まれないので、必ず見るタイトルに強みを入れる</span></div></li>
+    <li><i>2</i><div>写真を差し替える<span>トップ画像を「場所」から「人が楽しんでいる空気感」へ</span></div></li>
+    <li><i>3</i><div>新ネタを仕込む<span>資格を足すのではなく、医療×社会・文化の話のストックを増やす</span></div></li>
   </ul>
 </div></section>
 
-<section id="next" class="sec alt"><div class="wrap reveal">
-  <span class="eyebrow">これからやりたいこと</span>
-    <div class="next">
-    <div><span class="chip">いま募集中</span><h3>ゲスト回（公開猫パンチ）</h3><p>集客やマーケに困っている人が、自分の商売を持ち込む回。フォームの「提案依頼」から応募。このページはそのためのものです。</p></div>
-    <div><span class="chip">続編</span><h3>お返事回</h3><p>猫パンチされた人が、数ヶ月後に「やってみた結果」を話しに来る回。ゆりさんのタイトル変更がその第1号になる予定。</p></div>
-    <div><span class="chip gray">構想中</span><h3>勝手に提案書1枚</h3><p>各回の「俺ならこうする」をA4の提案書PDFにして概要欄に置く。決裁者が持ち帰れる形にする。</p></div>
-    <div><span class="chip gray">続けること</span><h3>業界名入りタイトルで、隔週〜月1</h3><p>その業界の人が自分の業界名で検索して見つけられるように。まずは3ヶ月で6本公開が目標。</p></div>
-  </div>
+<section id="eps" class="sec alt"><div class="wrap reveal">
+  <span class="eyebrow">エピソード</span>
+  <ul class="eps">
+    <li><span class="no">#1</span><div class="t">マーケ課題は「掛け算」で解ける。業界の背中を押す新感覚番組始動！</div><a class="play" href="https://open.spotify.com/episode/0TjGoTPhzlOjAzpPausf1u" target="_blank" rel="noopener">▶ 聴く</a></li>
+    <li><span class="no">#2</span><div class="t">【歯医者】嫌われる場所から選ばれる場所へ！患者第一のマーケティング施策とは？</div><a class="play" href="https://open.spotify.com/episode/3wNQ0tZWk1HG0HiYUfa2yW" target="_blank" rel="noopener">▶ 聴く</a></li>
+    <li><span class="no">#3</span><div class="t">【ツアーガイド】看護師スキルで金沢を差別化！<small>初のゲスト回</small></div><span class="soon">公開準備中</span></li>
+  </ul>
+  <p class="take">これから: ゲスト回を隔週〜月1で公開。数ヶ月後に結果を話す「お返事回」も予定。</p>
 </div></section>
 
 <section id="links" class="sec"><div class="wrap reveal">
-  <span class="eyebrow">リンク</span>
-    <ul class="linklist">
-    <li><div><b>Spotify 番組ページ</b><small>全エピソードはこちら。フォローすると新着が届きます</small></div><a href="https://open.spotify.com/show/033SdHMot0yrMpyGbboAYc" target="_blank" rel="noopener">open.spotify.com</a></li>
-    <li><div><b>お便り・提案依頼フォーム</b><small>ゲスト応募、感想、質問はすべてこの1つのフォームから</small></div><a href="https://forms.gle/DHtyPdeBFkCN56rR8" target="_blank" rel="noopener">forms.gle</a></li>
-    <li><div><b>このページ</b><small>ゲスト候補の方に渡す用。そのままシェアしてください</small></div><a href="https://yukitchy.github.io/nekopunch-guest/">yukitchy.github.io/nekopunch-guest</a></li>
-  </ul>
   <div class="cta-end">
-    <div><h3>うちの商売にも、猫パンチしてほしい。</h3><p>そう思ったら、相談したいことを1〜2行で。あとは番組側で進めます。</p></div>
+    <div><h3>ゲストになりたい方へ</h3><p>相談したいことを1〜2行で送ってください。あとは番組側で進めます。</p></div>
     <a class="btn pri" href="https://forms.gle/DHtyPdeBFkCN56rR8" target="_blank" rel="noopener">提案依頼を送る</a>
   </div>
 </div></section>
 
-<footer><div class="wrap"><span>愛の猫パンチ｜マーケプロの業界口出し系ポッドキャスト</span><span>2026.7 始動</span></div></footer>
+<footer><div class="wrap"><span>愛の猫パンチ｜マーケプロの業界口出し系ポッドキャスト</span><span><a href="https://open.spotify.com/show/033SdHMot0yrMpyGbboAYc" target="_blank" rel="noopener">Spotify番組ページ</a></span></div></footer>
 </body>
 </html>
