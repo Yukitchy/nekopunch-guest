@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>てつろうさん回のまとめ</title>
+<meta property="og:title" content="てつろうさん回のまとめ｜愛の猫パンチ">
+<meta property="og:description" content="152回のラジオを、てつろうAIにする。収録の要点と、ここからできること。">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23D62828'/%3E%3Cg fill='%23fff'%3E%3Cellipse cx='32' cy='42' rx='12' ry='10'/%3E%3Cellipse cx='16' cy='29' rx='5' ry='6.5'/%3E%3Cellipse cx='26' cy='20' rx='5' ry='7'/%3E%3Cellipse cx='38' cy='20' rx='5' ry='7'/%3E%3Cellipse cx='48' cy='29' rx='5' ry='6.5'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@700;900&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F6F4EE;--white:#FFFFFF;--ink:#1C1B22;--sub:#5C5A66;--line:#DDDAD2;
+  --red:#D62828;--red-ink:#B01E1E;--red-soft:#FBE9E7;--deco:rgba(28,27,34,.05);
+  --ease-out:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Noto Sans JP",-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN",sans-serif;
+  font-size:16px;line-height:1.85;-webkit-font-smoothing:antialiased}
+body,p,li,dd,dt,div,span,b,a,h1,h2,h3{word-break:keep-all;line-break:strict;overflow-wrap:anywhere}
+h1,h2,h3{font-family:"Zen Kaku Gothic New","Noto Sans JP",sans-serif;font-weight:900;line-height:1.4;letter-spacing:.01em;margin:0;text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+a{color:var(--red-ink)}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+.sec{padding:80px 0;position:relative;overflow:hidden}
+.sec.alt{background:var(--white)}
+.sec::before{content:"";position:absolute;pointer-events:none;z-index:0}
+.sec:nth-of-type(4n+1)::before{top:-40px;right:-60px;width:260px;height:260px;background:var(--deco);border-radius:0 0 0 100%}
+.sec:nth-of-type(4n+2)::before{bottom:24px;right:-10px;width:200px;height:150px;background-image:radial-gradient(var(--deco) 2px,transparent 2px);background-size:18px 18px}
+.sec:nth-of-type(4n+3)::before{top:60px;right:-70px;width:220px;height:220px;border-radius:50%;border:14px solid var(--deco)}
+.sec:nth-of-type(4n+4)::before{top:40px;right:-40px;width:160px;height:26px;border-radius:999px;background:var(--deco);box-shadow:0 52px 0 -4px var(--deco),0 104px 0 8px var(--deco)}
+.eyebrow{display:flex;align-items:center;gap:10px;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:15px;letter-spacing:.08em;color:var(--red-ink);margin-bottom:14px}
+.eyebrow::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--red);flex:0 0 auto}
+.sec-t{font-size:clamp(26px,3.6vw,36px);margin-bottom:12px}
+.sec-lead{color:var(--sub);font-size:16px;margin-bottom:40px;max-width:60ch}
+.red{color:var(--red)}
+.nw{white-space:nowrap}
+
+/* hero */
+.hero{padding:72px 0 64px}
+.show{display:inline-flex;align-items:center;gap:10px;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:15px;color:var(--ink);text-decoration:none;margin-bottom:28px}
+.show i{display:inline-block;width:28px;height:28px;border-radius:7px;background:var(--red);position:relative;flex:0 0 auto}
+.show i::after{content:"";position:absolute;inset:7px;border-radius:50%;background:#fff;transform:scale(.9) translateY(2px)}
+.hero h1{font-size:clamp(30px,6vw,60px);line-height:1.3;margin-bottom:22px;animation:rise .8s var(--ease-out) both}
+.hero .meta{font-size:15px;color:var(--sub);margin-bottom:40px}
+.people{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:760px}
+.person{display:flex;align-items:center;gap:14px}
+.person img{width:64px;height:64px;border-radius:50%;object-fit:cover;flex:0 0 auto;background:#e9e6df}
+.person.guest img{box-shadow:0 0 0 3px var(--paper),0 0 0 6px var(--red)}
+.person b{display:block;font-size:17px;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;line-height:1.35}
+.person span{display:block;font-size:13px;color:var(--sub);line-height:1.5}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+
+/* 結論 */
+.answers{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.answers li{display:grid;grid-template-columns:56px 1fr;gap:4px 18px;padding:26px 0;border-top:1px solid var(--line)}
+.answers li:last-child{border-bottom:1px solid var(--line)}
+.answers .n{grid-row:span 2;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:34px;line-height:1.1;color:var(--red);font-variant-numeric:tabular-nums}
+.answers h3{font-size:clamp(19px,2.4vw,23px)}
+.answers p{color:var(--sub);font-size:15.5px}
+
+/* 流れ */
+.flow{list-style:none;margin:0;padding:0;position:relative}
+.flow::before{content:"";position:absolute;left:23px;top:10px;bottom:10px;width:2px;background:var(--line)}
+.flow li{display:grid;grid-template-columns:48px 1fr;gap:18px;padding:0 0 34px;position:relative}
+.flow li:last-child{padding-bottom:0}
+.flow img{width:48px;height:48px;border-radius:50%;object-fit:cover;position:relative;background:#e9e6df;box-shadow:0 0 0 4px var(--white)}
+.flow .who{font-size:13px;font-weight:700;color:var(--sub);margin-bottom:4px}
+.flow h3{font-size:18px;margin-bottom:8px}
+.flow blockquote{margin:0;font-size:15.5px;color:var(--ink);padding-left:14px;border-left:3px solid var(--red-soft)}
+.flow .note{font-size:14px;color:var(--sub);margin-top:8px}
+
+/* 数字 */
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:2px solid var(--ink)}
+.num{padding:22px 18px 22px 0}
+.num+.num{padding-left:18px;border-left:1px solid var(--line)}
+.num dt{font-size:13px;color:var(--sub);font-weight:700;margin-bottom:6px}
+.num dd{margin:0;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:clamp(30px,4.2vw,44px);line-height:1.1;font-variant-numeric:tabular-nums}
+.num dd small{font-size:16px;margin-left:2px}
+.num p{font-size:13.5px;color:var(--sub);margin-top:8px;line-height:1.6}
+.src{font-size:13px;color:var(--sub);margin-top:18px}
+
+/* 決まったこと */
+.decided{background:var(--ink);color:#fff;border-radius:16px;padding:28px 30px;margin-bottom:28px}
+.decided .lbl{font-size:13px;font-weight:700;letter-spacing:.1em;color:#ffb3ad;margin-bottom:6px}
+.decided p{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:clamp(20px,2.6vw,26px);line-height:1.5}
+.todo{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.todo h3{display:flex;align-items:center;gap:10px;font-size:17px;padding-bottom:12px;border-bottom:2px solid var(--ink);margin-bottom:6px}
+.todo h3 img{width:32px;height:32px;border-radius:50%;object-fit:cover}
+.todo ul{list-style:none;margin:0;padding:0}
+.todo li{display:grid;grid-template-columns:20px 1fr;gap:10px;padding:12px 0;border-bottom:1px solid var(--line);font-size:15px;line-height:1.7}
+.todo li::before{content:"";width:16px;height:16px;border:2px solid var(--ink);border-radius:4px;margin-top:5px}
+.todo li small{display:block;font-size:13px;color:var(--sub)}
+.tag-tent{display:block;font-size:13px;font-weight:700;color:var(--red-ink)}
+
+/* 素案 */
+.ideas{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.idea{background:var(--paper);border-radius:16px;padding:26px 26px 22px;display:flex;flex-direction:column}
+.idea.main{grid-column:1/-1;background:var(--red);color:#fff}
+.idea .for{display:inline-block;align-self:flex-start;font-size:13px;font-weight:700;padding:3px 12px;border-radius:999px;background:var(--white);color:var(--ink);margin-bottom:14px}
+.idea.main .for{background:#fff;color:var(--red-ink)}
+.idea h3{font-size:clamp(20px,2.4vw,24px);margin-bottom:10px}
+.idea .why{font-size:15.5px;margin-bottom:18px;flex:1}
+.idea.main .why{color:#fff;max-width:62ch}
+.idea dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:15px;padding-top:14px;border-top:1px solid rgba(28,27,34,.15)}
+.idea.main dl{border-top-color:rgba(255,255,255,.35)}
+.idea dt{font-weight:700;color:var(--sub);font-size:13.5px;padding-top:2px}
+.idea.main dt{color:#ffd9d5}
+.idea dd{margin:0}
+.idea .from{font-size:13.5px;color:var(--sub);margin-top:12px}
+.idea.main .from{color:#ffd9d5}
+.route{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:4px 0 18px}
+.route span{background:#fff;color:var(--ink);font-weight:700;font-size:14.5px;padding:7px 14px;border-radius:999px}
+.route i{font-style:normal;font-weight:900;color:#fff;opacity:.85}
+
+/* footer */
+footer{padding:56px 0 72px;font-size:14px;color:var(--sub)}
+footer .links{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:22px}
+footer .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;font-weight:700;font-size:15px;text-decoration:none;transition:transform .12s var(--ease-out)}
+footer .btn:hover{transform:translateY(-2px)}
+footer .btn.solid{background:var(--red);color:#fff}
+footer .btn.ghost{background:var(--white);color:var(--ink);border:1px solid var(--line)}
+
+@media (max-width:760px){
+  .sec{padding:60px 0}
+  .wrap{padding:0 18px}
+  .hero{padding:48px 0 52px}
+  .people{grid-template-columns:1fr;gap:14px}
+  .nums{grid-template-columns:repeat(2,1fr)}
+  .num:nth-child(3){padding-left:0;border-left:0}
+  .num:nth-child(n+3){border-top:1px solid var(--line)}
+  .todo{grid-template-columns:1fr;gap:34px}
+  .ideas{grid-template-columns:1fr}
+  .idea{padding:22px 20px 20px}
+  .answers li{grid-template-columns:40px 1fr;gap:4px 12px}
+  .answers .n{font-size:28px}
+  .decided{padding:22px 20px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media print{.sec::before{display:none}body{background:#fff}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <a class="show" href="https://yukitchy.github.io/nekopunch-guest/"><i></i>愛の​猫パンチ　て​つろうさん回</a>
+    <h1>152回の​ラジオを、<span class="nw"><span class="red">て​つろう​AI</span>に​する。</span></h1>
+    <p class="meta">2026年10月7日に​Zoomで​収録した​本編47分を、​参加した​3人向けに​まとめました。</p>
+    <div class="people">
+      <div class="person guest"><img src="tetsuro.jpg" alt="てつろうさん"><div><b>て​つろうさん</b><span>ゲスト。​民泊ホスト​（浅草・西巣鴨）、​行政書士</span></div></div>
+      <div class="person"><img src="yuichi.jpg" alt="ユウイチ"><div><b>ユウイチ</b><span>猫パンチ担当。​現役の​企業マーケター</span></div></div>
+      <div class="person"><img src="yuuki.jpg" alt="ユウキ"><div><b>ユウキ</b><span>生徒役。​民泊ガイドラジオの​相方</span></div></div>
+    </div>
+  </div>
+</header>
+
+<section class="sec alt">
+  <div class="wrap">
+    <p class="eyebrow">今日の​答え</p>
+    <h2 class="sec-t">3行で​いうと</h2>
+    <p class="sec-lead">民泊の​事業​その​ものには​困っていない。​困っているのは、​3年かけて​積んだ​152回分の​話が、​まだ​小さな​輪の​中でしか​聞かれていない​こと。</p>
+    <ol class="answers">
+      <li><span class="n">1</span><h3>届け先を​2つに​分けて​考える</h3><p>「民泊って​実は​いい​ものだよ」と​伝えたい​一般の​人と、​これから​始める​人・続けて​悩んでいる​ホスト。​この​2つは​出し方が​違うので、​最初に​分けて​決める。</p></li>
+      <li><span class="n">2</span><h3>本命は​「てつろう​AI」と​いう​駆け込み寺</h3><p>152回の​文字起こしを​もとに、​まず​AIに​聞けて、​それでも​足りない​時に​てつろうさん​本人へ​つながる形に​する。​オンラインサロンに​入らなくても、​聞きたい​ことだけ聞ける​場所。</p></li>
+      <li><span class="n">3</span><h3>広げるのは​Podcastの​外で</h3><p>情報を​探す人の​多くは​YouTubeや​SNSに​いる。​AIへの​質問を​ショート動画に、​読み物は​noteと​Xに​出して、​AIへ、​その​先は​本人へと​つなぐ。</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <p class="eyebrow">話の​流れ</p>
+    <h2 class="sec-t">47分で​出てきた​こと</h2>
+    <p class="sec-lead">発言は​文字起こしから​要点を​短くした​ものです。​言い回しは​実際と​少し​違います。</p>
+    <ol class="flow">
+      <li><img src="tetsuro.jpg" alt=""><div><p class="who">て​つろうさん</p><h3>悩みは​事業ではなく、​ラジオの​活かし方</h3><blockquote>沖縄にも​盛岡にも​金沢にも​全部​自腹で​取材に​行って、​152回積み重ねてきた。​でも​聞いているのは、​民泊で​検索して​初めて​この​番組に​来た​人たちだけ。</blockquote></div></li>
+      <li><img src="tetsuro.jpg" alt=""><div><p class="who">て​つろうさん</p><h3>民泊の​本は、​お金の​話しかない</h3><blockquote>出ている​本は​全部​金儲け。​民泊が​ホストと​ゲストの​人生を​変える、と​いう​話は​まだ​どこにも​出ていない。​そこに​ニーズが​あるのかは、​自信が​ない。</blockquote></div></li>
+      <li><img src="yuichi.jpg" alt=""><div><p class="who">ユウイチ</p><h3>情報を​探す人は、​Podcastの​4倍SNSに​いる</h3><blockquote>不動産投資の​人が​情報を​集める​場所を​調べたら、​Podcastは​1割くらい、​本が​2割、​YouTubeや​インスタは​4割。​出しどころが​大事だと​思う。</blockquote></div></li>
+      <li><img src="yuichi.jpg" alt=""><div><p class="who">ユウイチ</p><h3>一般向けと、​始める​人向けは​分ける</h3><blockquote>民泊は​いい​ものだよと​いう​一般への​訴えと、​始めたい​人・やっている​人への​支援。​この​2つは、​やる​前に​分けて​決めた​方が​いい。</blockquote></div></li>
+      <li><img src="yuichi.jpg" alt=""><div><p class="who">ユウイチ</p><h3>今​日いちばん​言いたかった​こと</h3><blockquote>今日の​昼に​1話聞いて、​30分に​この​情報量で​150回あるなら、​もう​AIに​した​方が​いい。​まず​AIに​聞いて、​助けが​要る​時だけて​つろうさんに​連絡する、​駆け込み寺みたいな形。</blockquote><p class="note">ホリエモンが​自分の​AIを​作り​「まず​AIに​聞け、​足りなければ​相談プランへ」と​している​例も​挙がりました。</p></div></li>
+      <li><img src="tetsuro.jpg" alt=""><div><p class="who">て​つろうさん</p><h3>知らずに​始めて​大やけどする​人は、​今も​いる</h3><blockquote>知り合いが​数千万の​物件に​頭金を​払った​あとで、​広さの​条件で​旅館業が​取れないと​分かった。​始める​前に​聞ける​場所が​あれば、​こういう​人を​減らせる。</blockquote></div></li>
+      <li><img src="yuuki.jpg" alt=""><div><p class="who">ユウキ</p><h3>サロンに​入りたくない​人の​受け皿に​なる</h3><blockquote>オンラインサロンは​お金より、​入ったと​いう​ラベルが​嫌。​無人レジみたいに、​聞きたい​ことだけ​聞いて​終われるなら​いい。​同じ型は​体験ツアーガイドラジオにも​使える。</blockquote></div></li>
+      <li><img src="tetsuro.jpg" alt=""><div><p class="who">て​つろうさん</p><h3>やりたいことが​見えた</h3><blockquote>積み上げた​音声と​文字を​もとに、​みんなが​アクセスしやすい形を​作って、​Xや​noteや​YouTubeで​間口を​開ける。​荒稼ぎより、​民泊っていいねを​広めて、​始めたい​人を​助けたい。</blockquote></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec alt">
+  <div class="wrap">
+    <p class="eyebrow">数字メモ</p>
+    <h2 class="sec-t">収録で​出た​数字</h2>
+    <dl class="nums">
+      <div class="num"><dt>配信した​回数</dt><dd>152<small>回</small></dd><p>民泊ガイドラジオ。​約3年</p></div>
+      <div class="num"><dt>番組の​収益</dt><dd>0<small>円</small></dd><p>完全無償。​取材の​旅費も​全部​自腹</p></div>
+      <div class="num"><dt>情報源が​Podcast</dt><dd>10<small>%</small></dd><p>本は​約20%​（ユウイチ​調べ）</p></div>
+      <div class="num"><dt>情報源が​SNS</dt><dd>40<small>%</small></dd><p>YouTube・インスタなど​（同上）</p></div>
+    </dl>
+    <p class="src">割合は​不動産投資家の​情報収集に​ついて​ユウイチが​調べた​数字で、​民泊に​限った​調査ではありません。​Xの​フォロワーは​20人台、​文字起こしは​152回分すべて​できています​（いずれも​収録での​発言）。</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <p class="eyebrow">決まった​こと</p>
+    <h2 class="sec-t">誰が、​何を​するか</h2>
+    <div class="decided">
+      <p class="lbl">収録の​最後に​決めた​こと</p>
+      <p>て​つろう​AIを​作ってみる。​できたら次は​「どうやって​広げるか」を​この​3人で​相談する。</p>
+    </div>
+    <div class="todo">
+      <div>
+        <h3><img src="yuuki.jpg" alt="">ユウキ</h3>
+        <ul>
+          <li><span>152回の​文字起こしを​束ねて、​てつろう​AIの​試作を​作る<small>収録後すぐ​着手と​発言</small></span></li>
+          <li><span>試作が​できたら、​この​3人に​触って​もらう<span class="tag-tent">提案</span></span></li>
+        </ul>
+      </div>
+      <div>
+        <h3><img src="tetsuro.jpg" alt="">て​つろうさん</h3>
+        <ul>
+          <li><span>試作の​答えが​正しいかを、​行政書士の​目で​確かめる<span class="tag-tent">提案</span></span></li>
+          <li><span>どんな​見え方なら​使って​もらえるか​（アプリ、​サイト、​動画）を​考えて​おく<small>収録で​本人が​投げた​問い</small></span></li>
+        </ul>
+      </div>
+      <div>
+        <h3><img src="yuichi.jpg" alt="">ユウイチ</h3>
+        <ul>
+          <li><span>て​つろう​AIが​できたら、​広げ方の​相談に​乗る<small>「緊急報告」の​回と​して</small></span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt">
+  <div class="wrap">
+    <p class="eyebrow">ここから​できる​こと​（素案）</p>
+    <h2 class="sec-t">この​話から​浮かんだ​5つ</h2>
+    <p class="sec-lead">収録の​話を​もとに​ユウキ側で​まとめた​案です。​まだ​決定ではありません。​どれから​始めるか、​3人で​選んでください。</p>
+    <div class="ideas">
+
+      <article class="idea main">
+        <span class="for">始めたい​人・​悩んでいる​ホスト向け</span>
+        <h3>て​つろう​AI​「民泊の​駆け込み寺」</h3>
+        <p class="why">152回の​文字起こしだけを​答えの​元に​した​AI。​まず​ここで​聞き、​申請や​物件の​ことで​本当に​困ったら、​てつろうさん​（行政書士）に​相談できる。​番組の​話が​そのまま​「人に​聞ける​形」に​なります。</p>
+        <div class="route"><span>まず​AIに​聞く</span><i>›</i><span>関係する​回を​聞く</span><i>›</i><span>て​つろうさんに​相談</span></div>
+        <dl>
+          <dt>最初の​1手</dt><dd>よく​ある​質問を​20個決めて、​試作AIに​答えさせ、​てつろうさんが​採点する</dd>
+          <dt>担当</dt><dd>試作は​ユウキ、​採点は​てつろうさん</dd>
+        </dl>
+      </article>
+
+      <article class="idea">
+        <span class="for">一般の​人と、​始めたい​人の​両方</span>
+        <h3>生徒役が​AIに​聞く​ショート動画</h3>
+        <p class="why">ユウキが​生徒役でてつろう​AIに​質問し、​返ってきた​答えを​1-2分の​縦動画に​する。​顔出しも​映像編集の​手間も​ほぼ要らず、​AIの​宣伝にもなる。</p>
+        <dl>
+          <dt>最初の​1手</dt><dd>試作AIへの​質問5本を、​縦動画1本に​してみる</dd>
+          <dt>担当</dt><dd>ユウキ</dd>
+        </dl>
+      </article>
+
+      <article class="idea">
+        <span class="for">一般の​人向け</span>
+        <h3>noteで、​民泊の​いい話を​読み物に</h3>
+        <p class="why">文字起こしは​もう​あるので、​人の​話と​して​面白い​回から​読み物に​して​noteへ。​記事の​終わりに​「詳しくはてつろう​AIへ、​その​先は​本人へ」と​入口を​置く。</p>
+        <dl>
+          <dt>最初の​1手</dt><dd>ホストと​ゲストの​話が​濃い回を​5本選んで、​noteに​載せる</dd>
+          <dt>担当</dt><dd>選ぶのは​てつろうさん、​整えるのは​ユウキ</dd>
+        </dl>
+      </article>
+
+      <article class="idea">
+        <span class="for">これから​物件を​買う​人向け</span>
+        <h3>物件を​買う​前の​チェック表</h3>
+        <p class="why">頭金を​払った​あとで​旅館業が​取れないと​分かる​事故を​防ぐ。​用途地域や​広さなど、​買う前に​見る​項目を​短く​まとめ、​てつろう​AIの​最初の​メニューに​する。​行政書士の​仕事にも​自然に​つながる。</p>
+        <dl>
+          <dt>最初の​1手</dt><dd>申請で​実際に​つまずいた​例から、​確かめる​項目を​5つ​書き出す</dd>
+          <dt>担当</dt><dd>て​つろうさん</dd>
+        </dl>
+      </article>
+
+      <article class="idea">
+        <span class="for">体験ツアーを​始めたい​人向け</span>
+        <h3>同じ型を​体験ツアーガイドラジオにも</h3>
+        <p class="why">体験ツアーの​始め方には​教科書が​なく、​ヨシさんも​スタッフ一人​ひとりへの​教え方に​困っている。​てつろう​AIの​作り方が​固まれば、​同じ​手順で​ガイド版も​作れる。</p>
+        <dl>
+          <dt>最初の​1手</dt><dd>て​つろう​AIの​作り方を​手順と​して​残しておく</dd>
+          <dt>担当</dt><dd>ユウキ​（ヨシさんへの​声かけは​あとで）</dd>
+        </dl>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="links">
+      <a class="btn solid" href="https://open.spotify.com/show/033SdHMot0yrMpyGbboAYc">愛の​猫パンチを​Spotifyで​聞く</a>
+      <a class="btn ghost" href="https://minpaku.yuukipodcast.com/">民泊ガイドラジオの​サイト</a>
+    </div>
+    <p>この​ページは​収録に​参加した​3人だけに​共有しています。​この回の​配信は​まだです。</p>
+  </div>
+</footer>
+
+</body>
+</html>
